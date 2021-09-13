@@ -1,0 +1,24 @@
+<view class="main" wx:if="{{loading}}">
+
+  <view class="app-item" wx:for="{{appList}}" wx:key="unique">
+
+    <view class="app-one">
+      <view class="app-one-detail">
+        <image src="/images/pc.png"></image>
+        <view>{{item.Status==0?'预约成功':'已取消'}}</view>
+      </view>
+      <view wx:if="{{item.Status==0}}">预约挂号</view>
+    </view>
+
+    <view class="app-two">{{item.DoctorName}}{{item.DepName?' | '+item.DepName:''}}</view>
+    <view class="app-three mt-20">就诊人：{{item.PatientName}}</view>
+    <view class="app-three pb-28">就诊时间：{{item.AppointDate}} {{item.STime}}~{{item.ETime}}</view>
+    <!-- <view class="app-three pb-28">挂号金额：￥0.00</view> -->
+
+    <view data-item="{{item}}" class="cancel-btn" wx:if="{{item.Status==0}}" bindtap="cancelApp">取消挂号</view>
+
+  </view>
+
+  <view wx:if="{{appList.length==0}}" class="no_data">暂无预约</view>
+
+</view>

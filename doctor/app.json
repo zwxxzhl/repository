@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/examine-view/examine-view",
+    "pages/high-myopia/high-myopia",
+    "pages/high-web-ex/high-web-ex",
+    "pages/report-query/report-query",
+    "pages/report-list/report-list",
+    "pages/qg-list/qg-list",
+    "pages/qg-info/qg-info",
+    "pages/app-time/app-time",
+    "pages/member-appointment/member-appointment",
+    "pages/app-doctor/app-doctor",
+    "pages/member-info/member-info",
+    "pages/member-bind/member-bind",
+    "pages/add-bind/add-bind",
+    "pages/create-qrcode/create-qrcode"
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "在线预约",
+        "iconPath": "images/index5.png",
+        "selectedIconPath": "images/index5.png"
+      },
+      {
+        "pagePath": "pages/high-myopia/high-myopia",
+        "text": "高近检测",
+        "iconPath": "images/r_icon7.png",
+        "selectedIconPath": "images/r_icon7.png"
+      },
+      {
+        "pagePath": "pages/examine-view/examine-view",
+        "text": "报告查看",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000000,
+    "connectSocket": 10000000,
+    "uploadFile": 10000000,
+    "downloadFile": 10000000
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

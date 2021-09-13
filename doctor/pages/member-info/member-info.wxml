@@ -1,0 +1,65 @@
+<view class="main" wx:if="{{loading}}">
+
+  <view class="oper_item">
+    <view>
+      <text>*</text>
+      <label>姓名</label>
+    </view>
+    <view>
+      <input type="text" placeholder="请输入姓名" placeholder-class="p_class" value="{{memInfo.userName}}"
+        bindinput="inputName" />
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text>*</text>
+      <label>性别</label>
+    </view>
+    <view bindtap="chooseSex">
+      <input disabled="true" type="text" placeholder="请选择性别" placeholder-class="p_class"
+        value="{{memInfo.gendor==0?'男':'女'}}" />
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text>*</text>
+      <label>手机号</label>
+    </view>
+    <view>
+      <input type="number" placeholder="请输入手机号" placeholder-class="p_class" value="{{memInfo.mobilePhone}}"
+        bindinput="inputPhone" />
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text>*</text>
+      <label>出生日期</label>
+    </view>
+    <picker mode="date" value="{{memInfo.birthday}}" bindchange="chooseBirthday">
+      <view>{{memInfo.birthday}}</view>
+    </picker>
+    <image src="/images/right.png"></image>
+  </view>
+
+
+  <view class="oper_item">
+    <view>
+      <text></text>
+      <label>身份证号</label>
+    </view>
+    <view>
+      <input type="idcard" placeholder="请输入身份证号" placeholder-class="p_class" value="{{memInfo.idCardNo}}"
+        bindinput="inputIdCard" />
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="save_btn" bindtap="saveInfo">保存</view>
+
+</view>

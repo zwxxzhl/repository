@@ -1,0 +1,8 @@
+<view>
+  <view class="mem_name">
+    <image src="/images/logo.png"></image>
+  </view>
+  <web-view
+          src="https://sh.eyescare.cn/#/home">
+  </web-view>
+</view>

@@ -1,0 +1,22 @@
+<view>
+  <view class="mem_name">
+    <image src="/images/logo.png"></image>
+  </view>
+  <van-grid column-num="1">
+    <van-grid-item
+            icon="notes-o"
+            link-type="navigateTo"
+            url="/pages/high-web-ex/high-web-ex"
+            text="高近检测" />
+    <van-grid-item
+            icon="tv-o"
+            link-type="navigateTo"
+            url="/pages/high-web-ex/high-web-ex"
+            text="科普讲座" />
+    <van-grid-item
+            icon="description"
+            link-type="navigateTo"
+            url="/pages/high-web-ex/high-web-ex"
+            text="水电体检" />
+  </van-grid>
+</view>

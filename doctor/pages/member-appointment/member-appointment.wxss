@@ -1,0 +1,65 @@
+.main {
+  padding: 32rpx 0;
+}
+
+.app-item {
+  width: 684rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+  margin: 0 auto 24rpx;
+}
+
+.app-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22rpx 28rpx 28rpx 16rpx;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #CCCCCC;
+}
+
+.app-one-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #000000;
+}
+
+.app-one-detail image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+
+.app-two {
+  font-size: 36rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #000000;
+  padding: 0 16rpx;
+}
+
+.app-three {
+  padding: 0 16rpx;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 14rpx;
+}
+
+.cancel-btn {
+  font-size: 28rpx;
+  line-height: 100rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #FF6600;
+  text-align: center;
+  margin: 0 16rpx;
+  border-top: 1px solid #EEEEEE;
+}

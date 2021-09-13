@@ -1,0 +1,28 @@
+.main {
+  padding-top: 32rpx;
+}
+
+.doctor-item {
+  width: 684rpx;
+  height: 176rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+  margin: 0 auto 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 36rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #000000;
+}
+
+.doctor-item>view {
+  margin-left: 30rpx;
+}
+
+.doctor-item image {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 50rpx;
+}

@@ -1,0 +1,108 @@
+<view class="main">
+
+  <view class="oper_item">
+    <view>
+      <text>*</text>
+      <label>姓名</label>
+    </view>
+    <view>
+      <input type="text" placeholder="请输入姓名" placeholder-class="p_class" value="{{memInfo.userName}}"
+        bindinput="inputName" />
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text>*</text>
+      <label>性别</label>
+    </view>
+    <view bindtap="chooseSex">
+      <input disabled="true" type="text" placeholder="请选择性别" placeholder-class="p_class"
+        value="{{memInfo.gendor==0?'男':'女'}}" />
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text>*</text>
+      <label>手机号</label>
+    </view>
+    <view>
+      <input type="number" placeholder="请输入手机号" placeholder-class="p_class" value="{{memInfo.mobilePhone}}"
+        bindinput="inputPhone" />
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text>*</text>
+      <label>出生日期</label>
+    </view>
+    <picker mode="date" value="{{memInfo.birthday}}" bindchange="chooseBirthday">
+      <view>{{memInfo.birthday}}</view>
+    </picker>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text></text>
+      <label>出生胎龄</label>
+    </view>
+    <view>
+      <input type="text" placeholder="请输入出生胎龄" placeholder-class="p_class" value="" />
+      <view>周</view>
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text></text>
+      <label>出生体重</label>
+    </view>
+    <view>
+      <input type="text" placeholder="请输入出生体重" placeholder-class="p_class" value="" />
+      <view>千克</view>
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text></text>
+      <label>生产方式</label>
+    </view>
+    <picker mode="date" value="2014-01-01">
+      <view class="p_class">请选择</view>
+    </picker>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text></text>
+      <label>胎数</label>
+    </view>
+    <picker mode="date" value="2014-01-01">
+      <view class="p_class">请选择</view>
+    </picker>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="oper_item">
+    <view>
+      <text></text>
+      <label>出生医院</label>
+    </view>
+    <view>
+      <input type="text" placeholder="请输入出生医院" placeholder-class="p_class" value="" />
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+
+  <view class="save_btn">保存</view>
+</view>

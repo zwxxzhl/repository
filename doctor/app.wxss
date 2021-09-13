@@ -1,0 +1,35 @@
+page {
+  background: #f8f8f8;
+}
+
+.no_b {
+  border-bottom: none !important;
+}
+
+.no_data {
+  width: 100%;
+  line-height: 400rpx;
+  text-align: center;
+  color: #333333;
+  font-size: 28rpx;
+}
+
+.split {
+  height: 30rpx;
+}
+
+.mt-20 {
+  margin-top: 20rpx;
+}
+
+.pb-28 {
+  padding-bottom: 28rpx !important;
+}
+
+.mt-28 {
+  margin-top: 28rpx;
+}
+
+.b_t {
+  border-top: 1px solid #eeeeee;
+}

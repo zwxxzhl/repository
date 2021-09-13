@@ -1,0 +1,12 @@
+<view>
+
+  <view class="mem_name">
+    <image src="/images/logo.png"></image>
+  </view>
+  <van-grid column-num="1">
+    <van-grid-item icon="eye-o" text="眼健康体检报告" />
+    <van-grid-item icon="notes-o" text="高近检测报告" />
+    <van-grid-item icon="description" text="水电体检报告" />
+  </van-grid>
+
+</view>

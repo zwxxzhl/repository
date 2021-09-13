@@ -1,0 +1,1267 @@
+<view class="main" wx:if="{{loading}}">
+
+
+
+  <view wx:if="{{examineData.sourceType==0}}" class="child_info">
+
+    <view class="child_mem_info">
+      <view class="c_detail_info">
+        <view class="c_name">{{studentInfo.studentName}}</view>
+        <view class="c_no">{{studentInfo.idNumber}}</view>
+      </view>
+
+      <view class="info_mem">
+        <view>
+          <view class="c_detail_info1">
+            <view class="c_detail">
+              <view>性別：</view>
+              <view class="c_text">{{studentInfo.gender==0?'男':'女'}}</view>
+            </view>
+            <view class="c_detail">
+              <view>班级：</view>
+              <view class="c_text">{{studentInfo.gradeCode}}({{studentInfo.classCode}}班)</view>
+            </view>
+          </view>
+
+          <view class="c_detail_info1">
+            <view class="c_detail">
+              <view>学校：</view>
+              <view class="c_text">{{studentInfo.schoolName}}</view>
+            </view>
+            <view class="c_detail">
+              <view>学年：</view>
+              <view class="c_text">{{studentInfo.year}}</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="canvas_view" wx:if="{{qrcodePop}}">
+          <canvas class="canvas-code" canvas-id="myQrcode" style="width:{{qrcode_w}}px;height:{{qrcode_w}}px;" />
+        </view>
+
+      </view>
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon7.png"></image>
+      <view>视力</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="info_item eye_item">
+        <view>裸眼视力</view>
+        <view></view>
+      </view>
+
+      <view class="no_eye_view">
+        <view class="no_eye_info">
+          <view>右眼</view>
+          <view>左眼</view>
+        </view>
+
+        <view class="no_eye_info">
+          <view class="c_text1">
+            {{examineData.items['001002002'].displayString?examineData.items['001002002'].displayString:'/'}}</view>
+          <view class="c_text1">
+            {{examineData.items['001002001'].displayString?examineData.items['001002001'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+
+      <view class="info_item eye_item">
+        <view>戴镜视力</view>
+        <view></view>
+      </view>
+
+      <view class="no_eye_view">
+        <view class="no_eye_info">
+          <view>右眼</view>
+          <view>左眼</view>
+        </view>
+
+        <view class="no_eye_info">
+          <view class="c_text1">
+            {{examineData.items['001002027'].displayString?examineData.items['001002027'].displayString:'/'}}</view>
+          <view class="c_text1">
+            {{examineData.items['001002026'].displayString?examineData.items['001002026'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+      <view class="info_item eye_item">
+        <view>戴镜类型</view>
+        <view class="c_text1">框架眼镜</view>
+      </view>
+
+      <view class="info_item eye_item no_b">
+        <view>佩戴度数</view>
+        <view></view>
+      </view>
+
+      <view class="no_eye_view">
+        <view class="no_eye_info">
+          <view>右眼</view>
+          <view>左眼</view>
+        </view>
+
+        <view class="no_eye_info">
+          <view class="c_text1">
+            {{examineData.items['001002030'].displayString?examineData.items['001002030'].displayString:'/'}}</view>
+          <view class="c_text1">
+            {{examineData.items['001002029'].displayString?examineData.items['001002029'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+
+    </view>
+
+
+
+    <view class="title_item">
+      <image src="/images/r_icon6.png"></image>
+      <view>屈光检查</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="eye_info eye_new_info">
+        <view></view>
+        <view>球镜(S)</view>
+        <view>柱镜(D)</view>
+        <view>轴位</view>
+
+      </view>
+
+      <view class="eye_info eye_new_info">
+        <view>右眼</view>
+        <view class="c_text1">
+          {{examineData.items['001002013'].displayString?examineData.items['001002013'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002015'].displayString?examineData.items['001002015'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002017'].displayString?examineData.items['001002017'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info eye_new_info">
+        <view>左眼</view>
+        <view class="c_text1">
+          {{examineData.items['001002012'].displayString?examineData.items['001002012'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002014'].displayString?examineData.items['001002014'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002016'].displayString?examineData.items['001002016'].displayString:'/'}}</view>
+      </view>
+
+    </view>
+
+    <!-- <view class="no_eye_view remark-view">
+      <view class="eye_remark">备注</view>
+      <view class="info_desc">无</view>
+    </view> -->
+
+    <view class="title_item">
+      <view>主觉验光</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="eye_info eye_new_info">
+        <view></view>
+        <view>球镜(Sph)</view>
+        <view>柱镜(Cyl)</view>
+        <view>轴位(Axial)</view>
+
+      </view>
+
+      <view class="eye_info eye_new_info">
+        <view>右眼(OD)</view>
+        <view class="c_text1">{{examineData.items['0301'].displayString?examineData.items['0301'].displayString:'/'}}
+        </view>
+        <view class="c_text1">{{examineData.items['0303'].displayString?examineData.items['0303'].displayString:'/'}}
+        </view>
+        <view class="c_text1">{{examineData.items['0305'].displayString?examineData.items['0305'].displayString:'/'}}
+        </view>
+      </view>
+
+      <view class="eye_info eye_new_info">
+        <view>左眼(OS)</view>
+        <view class="c_text1">{{examineData.items['0302'].displayString?examineData.items['0302'].displayString:'/'}}
+        </view>
+        <view class="c_text1">{{examineData.items['0304'].displayString?examineData.items['0304'].displayString:'/'}}
+        </view>
+        <view class="c_text1">{{examineData.items['0306'].displayString?examineData.items['0306'].displayString:'/'}}
+        </view>
+      </view>
+
+    </view>
+
+    <view class="c_info1 in-b-b">
+      <view class="info_item eye_item ">
+        <view>矫正视力(CVA)</view>
+        <view></view>
+      </view>
+
+      <view class="eye-ii">
+        <view class="no_e_info">
+          <view>右眼(OD)</view>
+          <view>{{examineData.items['0311'].displayString?examineData.items['0311'].displayString:'/'}}</view>
+        </view>
+        <view class="no_e_info">
+          <view>左眼(OS)</view>
+          <view>{{examineData.items['0312'].displayString?examineData.items['0312'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+    </view>
+
+
+
+    <view class="title_item">
+      <view>眼生物测量</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="eye_info n_e_i">
+        <view></view>
+        <view>右眼</view>
+        <view>左眼</view>
+      </view>
+
+      <view class="eye_info n_e_i">
+        <view>眼轴(AL)</view>
+        <view class="c_text1">
+          {{examineData.items['004001001'].displayString?examineData.items['004001001'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['004001002'].displayString?examineData.items['004001002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info n_e_i">
+        <view>中央角膜厚度(CCT)</view>
+        <view class="c_text1">
+          {{examineData.items['004002001'].displayString?examineData.items['004002001'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['004002002'].displayString?examineData.items['004002002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info n_e_i">
+        <view>前房深度(ACD)</view>
+        <view class="c_text1">
+          {{examineData.items['004003001'].displayString?examineData.items['004003001'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['004003002'].displayString?examineData.items['004003002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info n_e_i">
+        <view>晶状体厚度(LT)</view>
+        <view class="c_text1">
+          {{examineData.items['004004001'].displayString?examineData.items['004004001'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['004004002'].displayString?examineData.items['004004002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info n_e_i">
+        <view>玻璃体腔长度(VL)</view>
+        <view class="c_text1">
+          {{examineData.items['004005001'].displayString?examineData.items['004005001'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['004005002'].displayString?examineData.items['004005002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info n_e_i">
+        <view>角膜曲率(KRT)</view>
+        <view class="c_text1">
+          {{examineData.items['004006001'].displayString?examineData.items['004006001'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['004006002'].displayString?examineData.items['004006002'].displayString:'/'}}</view>
+      </view>
+
+    </view>
+
+
+
+    <view class="c_info1 in-b-b">
+
+      <view class="title_item">
+        <view>眼底检查</view>
+      </view>
+
+      <view class="info_item eye_item">
+        <view>右眼</view>
+        <view></view>
+      </view>
+
+      <view class="img-view">
+        <view>
+          <image bindtap="preImg" data-img="{{examineData.items['005004001'].displayString}}" mode="aspectFill"
+            src="{{'https://mbsb.scinomedicine.com/student_health/'+examineData.items['005004001'].displayString}}">
+          </image>
+        </view>
+        <!-- <view></view> -->
+      </view>
+
+      <view class="info_item eye_item">
+        <view>左眼</view>
+        <view>
+
+        </view>
+      </view>
+
+      <view class="img-view">
+        <view>
+          <image bindtap="preImg" data-img="{{examineData.items['005004103'].displayString}}" mode="aspectFill"
+            src="{{'https://mbsb.scinomedicine.com/student_health/'+examineData.items['005004103'].displayString}}">
+          </image>
+        </view>
+        <!-- <view></view> -->
+      </view>
+
+      <view class="info_item eye_item">
+        <view>检查结果</view>
+        <view></view>
+      </view>
+
+      <view class="e_r_view">
+        <view>
+          <view>右眼</view>
+          <view>左眼</view>
+        </view>
+        <view>
+          <view class="c_text1">
+            {{examineData.items['005004031'].displayString?examineData.items['005004031'].displayString:'/'}}</view>
+          <view class="c_text1">
+            {{examineData.items['005004032'].displayString?examineData.items['005004032'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class="c_info1 in-b-b">
+
+      <view class="title_item">
+        <view>裂隙灯检查</view>
+      </view>
+
+      <view class="info_item eye_item">
+        <view>检查结果</view>
+        <view></view>
+      </view>
+
+      <view class="e_r_view">
+        <view>
+          <view>右眼</view>
+          <view>左眼</view>
+        </view>
+        <view>
+          <view class="c_text1">
+            {{examineData.items['001002034'].displayString?examineData.items['001002034'].displayString:'/'}}</view>
+          <view class="c_text1">
+            {{examineData.items['001002033'].displayString?examineData.items['001002033'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+      <!-- <view class="no_eye_view remark-view">
+        <view class="eye_remark">诊断结论</view>
+        <view class="info_desc">无</view>
+      </view> -->
+
+    </view>
+
+  </view>
+
+
+  <view wx:if="{{examineData.sourceType==1}}" class="child_info">
+
+    <view class="child_mem_info">
+      <view class="c_detail_info">
+        <view class="c_name">{{studentInfo.studentName}}</view>
+        <view class="c_no">{{studentInfo.idNumber}}</view>
+      </view>
+
+      <view class="info_mem">
+        <view>
+          <view class="c_detail_info1">
+            <view class="c_detail">
+              <view>性別：</view>
+              <view class="c_text">{{studentInfo.gender==0?'男':'女'}}</view>
+            </view>
+            <view class="c_detail">
+              <view>班级：</view>
+              <view class="c_text">{{studentInfo.gradeCode}}({{studentInfo.classCode}}班)</view>
+            </view>
+          </view>
+
+          <view class="c_detail_info1">
+            <view class="c_detail">
+              <view>学校：</view>
+              <view class="c_text">{{studentInfo.schoolName}}</view>
+            </view>
+            <view class="c_detail">
+              <view>学年：</view>
+              <view class="c_text">{{studentInfo.year}}</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="canvas_view" wx:if="{{qrcodePop}}">
+          <canvas class="canvas-code" canvas-id="myQrcode" style="width:{{qrcode_w}}px;height:{{qrcode_w}}px;" />
+        </view>
+
+      </view>
+
+    </view>
+
+
+    <view class="title_item">
+      <image src="/images/r_icon1.png"></image>
+      <view>生长发育</view>
+    </view>
+
+    <view class="c_info1">
+      <view class="info_item">
+        <view>身高</view>
+        <view class="c_text1">
+          {{examineData.items['001001001'].displayString?examineData.items['001001001'].displayString:'/'}}<text>cm</text>
+        </view>
+      </view>
+      <view class="info_item no_b">
+        <view>体重</view>
+        <view class="c_text1">
+          {{examineData.items['001001002'].displayString?examineData.items['001001002'].displayString:'/'}}<text>kg</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon2.png"></image>
+      <view>口腔咽喉</view>
+    </view>
+
+    <view class="c_info1">
+      <view class="info2_info1">
+        <view class="info_text">龋齿</view>
+        <view class="info_desc">
+
+          <view class="tooth_desc">
+            <view>{{examineData.items['001008026'].displayString}}</view>
+            <view>{{examineData.items['001008027'].displayString}}</view>
+            <view>{{examineData.items['001008028'].displayString}}</view>
+            <view>{{examineData.items['001008029'].displayString}}</view>
+          </view>
+
+        </view>
+      </view>
+
+      <view class="info2_info1">
+        <view class="info_text">已填充龋齿</view>
+        <view class="info_desc">
+          <view class="tooth_desc">
+            <view>{{examineData.items['001008030'].displayString}}</view>
+            <view>{{examineData.items['001008031'].displayString}}</view>
+            <view>{{examineData.items['001008032'].displayString}}</view>
+            <view>{{examineData.items['001008033'].displayString}}</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>扁桃体</view>
+        <view class="c_text1">
+          {{examineData.items['001009019'].displayString?examineData.items['001009019'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>咽喉</view>
+        <view class="c_text1">
+          {{examineData.items['001009021'].displayString?examineData.items['001009021'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info2_info1">
+        <view class="info_text">其他</view>
+        <view class="info_desc">
+          {{examineData.items['001006'].displayString?examineData.items['001006'].displayString:'无'}}</view>
+      </view>
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon3.png"></image>
+      <view>内科</view>
+    </view>
+    <view class="c_info1">
+
+      <view class="info_item">
+        <view>心脏杂音</view>
+        <view class="c_text1">
+          {{examineData.items['001005001'].displayString?examineData.items['001005001'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>肺</view>
+        <view class="c_text1">
+          {{examineData.items['001005003'].displayString?examineData.items['001005003'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>肝</view>
+        <view class="c_text1">
+          {{examineData.items['001005004'].displayString?examineData.items['001005004'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>脾</view>
+        <view class="c_text1">
+          {{examineData.items['001005005'].displayString?examineData.items['001005005'].displayString:'/'}}</view>
+      </view>
+
+    </view>
+
+
+    <view class="title_item">
+      <image src="/images/r_icon4.png"></image>
+      <view>外科</view>
+    </view>
+    <view class="c_info1">
+
+      <view class="info_item">
+        <view>皮肤</view>
+        <view class="c_text1">
+          {{examineData.items['001003008'].displayString?examineData.items['001003008'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>淋巴结</view>
+        <view class="c_text1">
+          {{examineData.items['001003009'].displayString?examineData.items['001003009'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>头部</view>
+        <view class="c_text1">
+          {{examineData.items['001003001'].displayString?examineData.items['001003001'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>颈部</view>
+        <view class="c_text1">
+          {{examineData.items['001003002'].displayString?examineData.items['001003002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>胸部</view>
+        <view class="c_text1">
+          {{examineData.items['001003004'].displayString?examineData.items['001003004'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>脊柱</view>
+        <view class="c_text1">
+          {{examineData.items['001003005'].displayString?examineData.items['001003005'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>四肢</view>
+        <view class="c_text1">
+          {{examineData.items['001003006'].displayString?examineData.items['001003006'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>生殖</view>
+        <view class="c_text1">
+          {{examineData.items['001003011'].displayString?examineData.items['001003011'].displayString:'/'}}</view>
+      </view>
+
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon5.png"></image>
+      <view>化验检查</view>
+    </view>
+
+    <view class="c_info1">
+      <view class="info_item">
+        <view>校验号</view>
+        <view>{{examineData.jyh?examineData.jyh:'/'}}</view>
+      </view>
+      <view class="info_item no_b">
+        <view>血红蛋白</view>
+        <view class="c_text1">
+          {{examineData.items['001007004'].displayString?examineData.items['001007004'].displayString:'/'}}<text>g/l</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon6.png"></image>
+      <view>屈光检查</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="eye_info">
+        <view></view>
+        <view>右眼</view>
+        <view>左眼</view>
+      </view>
+
+      <view class="eye_info">
+        <view>球镜(S)</view>
+        <view class="c_text1">
+          {{examineData.items['001002013'].displayString?examineData.items['001002013'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002012'].displayString?examineData.items['001002012'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info">
+        <view>柱镜(D)</view>
+        <view class="c_text1">
+          {{examineData.items['001002015'].displayString?examineData.items['001002015'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002014'].displayString?examineData.items['001002014'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info">
+        <view>轴位</view>
+        <view class="c_text1">
+          {{examineData.items['001002017'].displayString?examineData.items['001002017'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002016'].displayString?examineData.items['001002016'].displayString:'/'}}</view>
+      </view>
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon7.png"></image>
+      <view>视力</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="info_item eye_item">
+        <view>裸眼视力</view>
+        <view></view>
+      </view>
+
+      <view class="no_eye_view">
+        <view class="no_eye_info">
+          <view>右眼</view>
+          <view>左眼</view>
+        </view>
+
+        <view class="no_eye_info">
+          <view class="c_text1">
+            {{examineData.items['001002002'].displayString?examineData.items['001002002'].displayString:'/'}}</view>
+          <view class="c_text1">
+            {{examineData.items['001002001'].displayString?examineData.items['001002001'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+
+      <view class="info_item eye_item">
+        <view>戴镜视力</view>
+        <view class="c_text1">框架眼镜</view>
+      </view>
+
+      <view class="no_eye_view">
+        <view class="no_eye_info">
+          <view>右眼</view>
+          <view>左眼</view>
+        </view>
+
+        <view class="no_eye_info">
+          <view class="c_text1">
+            {{examineData.items['001002027'].displayString?examineData.items['001002027'].displayString:'/'}}</view>
+          <view class="c_text1">
+            {{examineData.items['001002026'].displayString?examineData.items['001002026'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+    </view>
+
+
+  </view>
+
+  <view wx:if="{{examineData.sourceType==2}}" class="adult_info">
+
+    <view class="child_mem_info">
+      <view class="c_detail_info">
+        <view class="c_name">{{studentInfo.studentName}}</view>
+        <view class="c_no">{{studentInfo.idNumber}}</view>
+      </view>
+
+      <view class="info_mem">
+        <view>
+          <view class="c_detail_info1">
+            <view class="c_detail">
+              <view>性別：</view>
+              <view class="c_text">{{studentInfo.gender==0?'男':'女'}}</view>
+            </view>
+            <view class="c_detail">
+              <view>班级：</view>
+              <view class="c_text">{{studentInfo.gradeCode}}({{studentInfo.classCode}}班)</view>
+            </view>
+          </view>
+
+          <view class="c_detail_info1">
+            <view class="c_detail">
+              <view>学校：</view>
+              <view class="c_text">{{studentInfo.schoolName}}</view>
+            </view>
+            <view class="c_detail">
+              <view>学年：</view>
+              <view class="c_text">{{studentInfo.year}}</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="canvas_view" wx:if="{{qrcodePop}}">
+          <canvas class="canvas-code" canvas-id="myQrcode" style="width:{{qrcode_w}}px;height:{{qrcode_w}}px;" />
+        </view>
+
+      </view>
+
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon1.png"></image>
+      <view>身体形态</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="info_item">
+        <view>身高</view>
+        <view class="c_text1">
+          {{examineData.items['001001001'].displayString?examineData.items['001001001'].displayString:'/'}}<text>cm</text>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>体重</view>
+        <view class="c_text1">
+          {{examineData.items['001001002'].displayString?examineData.items['001001002'].displayString:'/'}}<text>kg</text>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>收缩压</view>
+        <view class="c_text1">
+          {{examineData.items['001001003'].displayString?examineData.items['001001003'].displayString:'/'}}<text>mmHg</text>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>舒张压</view>
+        <view class="c_text1">
+          {{examineData.items['001001004'].displayString?examineData.items['001001004'].displayString:'/'}}<text>mmHg</text>
+        </view>
+      </view>
+
+      <!-- <view class="info_item">
+        <view>肺活量</view>
+        <view class="c_text1">
+          {{examineData.items['001001005'].displayString?examineData.items['001001005'].displayString:'/'}}<text>ml</text>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>脉搏</view>
+        <view class="c_text1">
+          {{examineData.items['001001006'].displayString?examineData.items['001001006'].displayString:'/'}}<text>次/分</text>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>胸围</view>
+        <view class="c_text1">
+          {{examineData.items['001001012'].displayString?examineData.items['001001012'].displayString:'/'}}<text>cm</text>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>腰围</view>
+        <view class="c_text1">
+          {{examineData.items['001001013'].displayString?examineData.items['001001013'].displayString:'/'}}<text>cm</text>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>臀围</view>
+        <view class="c_text1">
+          {{examineData.items['001001014'].displayString?examineData.items['001001014'].displayString:'/'}}<text>cm</text>
+        </view>
+      </view> -->
+
+    </view>
+
+
+    <view class="title_item">
+      <image src="/images/r_icon1.png"></image>
+      <view>眼科</view>
+    </view>
+
+    <view class="c_info1">
+      <view class="info_item eye_item">
+        <view>裸眼视力</view>
+        <view></view>
+      </view>
+
+      <view class="no_eye_view">
+        <view class="no_eye_info">
+          <view>右眼</view>
+          <view>左眼</view>
+        </view>
+
+        <view class="no_eye_info">
+          <view class="c_text1">
+            {{examineData.items['001002002'].displayString?examineData.items['001002002'].displayString:'/'}}</view>
+          <view class="c_text1">
+            {{examineData.items['001002001'].displayString?examineData.items['001002001'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class="c_info1">
+      <view class="info_item eye_item">
+        <view>串镜检查</view>
+        <view></view>
+      </view>
+
+      <view class="no_eye_view">
+        <view class="no_eye_info">
+          <view>右眼</view>
+          <view>左眼</view>
+        </view>
+
+        <view class="no_eye_info">
+          <view class="c_text1">
+            {{examineData.items['001002004'].displayString?examineData.items['001002004'].displayString:'/'}}</view>
+          <view class="c_text1">
+            {{examineData.items['001002003'].displayString?examineData.items['001002003'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class="c_info1">
+      <view class="info_item">
+        <view>新发视力</view>
+        <view class="c_text1">
+          {{examineData.items['001002011'].displayString?examineData.items['001002011'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>沙眼</view>
+        <view class="c_text1">
+          {{examineData.items['001002005'].displayString?examineData.items['001002005'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>结膜炎</view>
+        <view class="c_text1">
+          {{examineData.items['001002007'].displayString?examineData.items['001002007'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>色觉</view>
+        <view class="c_text1">
+          {{examineData.items['001002010'].displayString?examineData.items['001002010'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info2_info1">
+        <view class="info_text">其他眼病</view>
+        <view class="info_desc">
+          {{examineData.items['001002009'].displayString?examineData.items['001002009'].displayString:'无'}}</view>
+      </view>
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon2.png"></image>
+      <view>口腔</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="info_item">
+        <view>乳龋</view>
+        <view class="c_text1">{{examineData.items['001008011'].displayString}}<text>颗</text></view>
+      </view>
+
+      <view class="info_item">
+        <view>乳龋失</view>
+        <view class="c_text1">{{examineData.items['001008021'].displayString}}<text>颗</text></view>
+      </view>
+
+      <view class="info_item">
+        <view>乳龋补</view>
+        <view class="c_text1">{{examineData.items['001008022'].displayString}}<text>颗</text></view>
+      </view>
+
+      <view class="info_item">
+        <view>牙周病</view>
+        <view class="c_text1">{{examineData.items['001008014'].displayString}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>恒龋</view>
+        <view class="c_text1">{{examineData.items['001008012'].displayString}}<text>颗</text></view>
+      </view>
+
+      <view class="info_item">
+        <view>恒龋失</view>
+        <view class="c_text1">{{examineData.items['001008023'].displayString}}<text>颗</text></view>
+      </view>
+
+      <view class="info_item">
+        <view>恒龋补</view>
+        <view class="c_text1">{{examineData.items['001008024'].displayString}}<text>颗</text></view>
+      </view>
+
+      <view class="info_item">
+        <view>窝沟封闭</view>
+        <view class="c_text1">{{examineData.items['001008013'].displayString}}</view>
+      </view>
+
+      <view class="info2_info1">
+        <view class="info_text">口腔异常</view>
+        <view class="info_desc">
+          {{examineData.items['001008025'].displayString?examineData.items['001008025'].displayString:'无'}}</view>
+      </view>
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon8.png"></image>
+      <view>耳鼻喉科</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="info_item">
+        <view>听力</view>
+        <view class="c_text1">
+          {{examineData.items['001009015'].displayString?examineData.items['001009015'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>耳</view>
+        <view class="c_text1">
+          {{examineData.items['001009017'].displayString?examineData.items['001009017'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>鼻</view>
+        <view class="c_text1">
+          {{examineData.items['001009018'].displayString?examineData.items['001009018'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>扁桃体</view>
+        <view class="c_text1">
+          {{examineData.items['001009019'].displayString?examineData.items['001009019'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>唇腭裂</view>
+        <view class="c_text1">
+          {{examineData.items['001008020'].displayString?examineData.items['001008020'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info2_info1">
+        <view class="info_text">耳鼻喉异常</view>
+        <view class="info_desc">
+          {{examineData.items['001009020'].displayString?examineData.items['001009020'].displayString:'无'}}</view>
+      </view>
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon4.png"></image>
+      <view>外科</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="info_item">
+        <view>头部</view>
+        <view class="c_text1">
+          {{examineData.items['001003001'].displayString?examineData.items['001003001'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>颈部</view>
+        <view class="c_text1">
+          {{examineData.items['001003002'].displayString?examineData.items['001003002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>甲状腺</view>
+        <view class="c_text1">
+          {{examineData.items['001003003'].displayString?examineData.items['001003003'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>胸廓</view>
+        <view class="c_text1">
+          {{examineData.items['001003004'].displayString?examineData.items['001003004'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>脊柱</view>
+        <view class="c_text1">
+          {{examineData.items['001003005'].displayString?examineData.items['001003005'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>四肢</view>
+        <view class="c_text1">
+          {{examineData.items['001003006'].displayString?examineData.items['001003006'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>扁平足</view>
+        <view class="c_text1">
+          {{examineData.items['001003007'].displayString?examineData.items['001003007'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>皮肤</view>
+        <view class="c_text1">
+          {{examineData.items['001003008'].displayString?examineData.items['001003008'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>淋巴结</view>
+        <view class="c_text1">
+          {{examineData.items['001003009'].displayString?examineData.items['001003009'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>疝</view>
+        <view class="c_text1">
+          {{examineData.items['001003010'].displayString?examineData.items['001003010'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item" wx:if="{{studentInfo.gender==0}}">
+        <view>男性外生殖器</view>
+        <view class="c_text1">
+          {{examineData.items['001003011'].displayString?examineData.items['001003011'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info2_info1">
+        <view class="info_text">外科异常</view>
+        <view class="info_desc">
+          {{examineData.items['001003012'].displayString?examineData.items['001003012'].displayString:'无'}}</view>
+      </view>
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon3.png"></image>
+      <view>内科</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="info_item">
+        <view>心脏杂音</view>
+        <view class="c_text1">
+          {{examineData.items['001005001'].displayString?examineData.items['001005001'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>心律失常</view>
+        <view class="c_text1">
+          {{examineData.items['001005002'].displayString?examineData.items['001005002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>肺</view>
+        <view class="c_text1">
+          {{examineData.items['001005003'].displayString?examineData.items['001005003'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>肝</view>
+        <view class="c_text1">
+          {{examineData.items['001005004'].displayString?examineData.items['001005004'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>脾</view>
+        <view class="c_text1">
+          {{examineData.items['001005005'].displayString?examineData.items['001005005'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info_item">
+        <view>腹部</view>
+        <view class="c_text1">
+          {{examineData.items['001005006'].displayString?examineData.items['001005006'].displayString:'/'}}</view>
+      </view>
+
+      <!-- <view class="info_item">
+        <view>胸透</view>
+        <view class="c_text1">
+          {{examineData.items['001005007'].displayString?examineData.items['001005007'].displayString:'/'}}</view>
+      </view>
+
+      <view class="info2_info1">
+        <view class="info_text">胸透异常</view>
+        <view class="info_desc">
+          {{examineData.items['001005010'].displayString?examineData.items['001005010'].displayString:'无'}}</view>
+      </view> -->
+
+      <view class="info2_info1">
+        <view class="info_text">内科异常</view>
+        <view class="info_desc">
+          {{examineData.items['001005009'].displayString?examineData.items['001005009'].displayString:'无'}}</view>
+      </view>
+
+    </view>
+
+
+    <view class="title_item">
+      <image src="/images/r_icon5.png"></image>
+      <view>化验检查</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="info_item">
+        <view>丙氨酸氨基转移酶</view>
+        <view class="c_text1">
+          {{examineData.items['001007006'].displayString?examineData.items['001007006'].displayString:'/'}}<text>U/L</text>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>血清总胆红素</view>
+        <view class="c_text1">
+          <!-- <image src="/images/top.png"></image> -->
+          {{examineData.items['001007007'].displayString?examineData.items['001007007'].displayString:'/'}}
+          <text>μ mol/L</text>
+        </view>
+      </view>
+
+      <view class="info_item">
+        <view>红细胞</view>
+        <view class="c_text1">
+          {{examineData.items['001007001'].displayString?examineData.items['001007001'].displayString:'/'}}<text>10<text
+              class="sup">12</text>/L</text></view>
+      </view>
+
+      <view class="info_item">
+        <view>白细胞</view>
+        <view class="c_text1">
+          {{examineData.items['001007002'].displayString?examineData.items['001007002'].displayString:'/'}}<text>10<text
+              class="sup">9</text>/L</text></view>
+      </view>
+
+      <view class="info_item">
+        <view>血小板</view>
+        <view class="c_text1">
+          {{examineData.items['001007003'].displayString?examineData.items['001007003'].displayString:'/'}}<text>10<text
+              class="sup">9</text>/L</text></view>
+      </view>
+
+      <view class="info_item">
+        <view>血红蛋白</view>
+        <view class="c_text1">
+          {{examineData.items['001007004'].displayString?examineData.items['001007004'].displayString:'/'}}<text>g/L</text>
+        </view>
+      </view>
+
+
+    </view>
+
+    <view class="title_item">
+      <image src="/images/r_icon6.png"></image>
+      <view>屈光检查</view>
+    </view>
+
+    <view class="c_info1">
+
+      <!-- <view class="info_item no_b">
+        <view>检查设备</view>
+        <view class="c_text1">伟伦筛查仪</view>
+      </view> -->
+
+
+      <view class="eye_info">
+        <view></view>
+        <view>右眼</view>
+        <view>左眼</view>
+      </view>
+
+      <view class="eye_info">
+        <view>球镜(S)</view>
+        <view class="c_text1">
+          {{examineData.items['001002013'].displayString?examineData.items['001002013'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002012'].displayString?examineData.items['001002012'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info">
+        <view>柱镜(D)</view>
+        <view class="c_text1">
+          {{examineData.items['001002015'].displayString?examineData.items['001002015'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002014'].displayString?examineData.items['001002014'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info">
+        <view>轴位</view>
+        <view class="c_text1">
+          {{examineData.items['001002017'].displayString?examineData.items['001002017'].displayString:'/'}}</view>
+        <view class="c_text1">
+          {{examineData.items['001002016'].displayString?examineData.items['001002016'].displayString:'/'}}</view>
+      </view>
+
+    </view>
+
+
+  </view>
+
+  <!-- <view class="tips_text">
+    <text>温馨提示：体检后发现</text>
+    <label>中度视力不良</label>
+    <text>和</text>
+    <label>重度视力不良</label>
+    <text>以及存在</text>
+    <label>眼病</label>
+    <text>的儿童、青少年进一步转诊到县级医院进行近视规范建档的检查项目包括：</text>
+    <label>普通视力检查、眼压检查、验光检查、眼部A超</label>
+    <text>，近视规范建档的检查项目</text>
+    <label>按我县医保门诊统筹报账</label>
+    <text>，其他疾病的检查与治疗费用按现有医保政策执行，请家长</text>
+    <label>携带孩子医保卡</label>
+    <text>前往指定医院</text>
+    <label>近视防控门诊</label>
+    <text>检查。谢谢配合！</text>
+  </view> -->
+
+  <view class="tips_text top_b" wx:if="{{examineData.comprehensiveEvaluation}}">
+    <view class="jcjl_tip">检查结论：</view>
+    <view>{{examineData.comprehensiveEvaluation}}</view>
+  </view>
+
+  <view class="tips_text" wx:if="{{examineData.recommendedCorrectionProject}}">
+    <view class="cljy_tip">处理建议：</view>
+    <view>{{examineData.recommendedCorrectionProject}}</view>
+  </view>
+
+  <view class="tips_text end_text"
+    wx-if="{{examineData.exceptionItemName=='中度视力低下'||examineData.exceptionItemName=='重度视力低下'}}">
+    根据孩子的视力体检结果，需要到指定医院开展免费近视规范建档，请您携带孩子医保卡按指定时间到近视建档定点医院进行免费规范建档检查！
+  </view>
+
+  <view wx-if="{{examineData.exceptionItemName=='中度视力低下'||examineData.exceptionItemName=='重度视力低下'}}" class="app-btn"
+    bindtap="toChooseDoctor">预约挂号</view>
+
+
+</view>
