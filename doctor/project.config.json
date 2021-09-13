@@ -8,7 +8,6 @@
     "es6": true,
     "enhance": true,
     "postcss": true,
-    "preloadBackgroundData": false,
     "minified": true,
     "newFeature": false,
     "coverView": true,
@@ -26,18 +25,9 @@
       "outputPath": ""
     },
     "bundle": false,
-    "useCompilerModule": false,
-    "userConfirmedUseCompilerModuleSwitch": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": true,
-    "packNpmManually": true,
-    "packNpmRelationList": [
-      {
-        "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./"
-      }
-    ]
+    "useApiHostProcess": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.15.0",
