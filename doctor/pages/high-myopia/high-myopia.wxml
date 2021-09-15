@@ -17,6 +17,6 @@
             icon="description"
             link-type="navigateTo"
             url="/pages/high-web-we/high-web-we"
-            text="水电预约" />
+            text="广州供电局体检预约" />
   </van-grid>
 </view>
