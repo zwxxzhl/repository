@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/examine-view/examine-view",
     "pages/high-myopia/high-myopia",
+    "pages/examine-view/examine-view",
+    "pages/index/index",
     "pages/high-web-ex/high-web-ex",
     "pages/report-query/report-query",
     "pages/report-list/report-list",
@@ -23,14 +23,8 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "在线预约",
-        "iconPath": "images/index5.png",
-        "selectedIconPath": "images/index5.png"
-      },
-      {
         "pagePath": "pages/high-myopia/high-myopia",
-        "text": "高近检测",
+        "text": "在线预约",
         "iconPath": "images/r_icon7.png",
         "selectedIconPath": "images/r_icon7.png"
       },
