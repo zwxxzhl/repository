@@ -3,6 +3,6 @@
     <image src="/images/logo.png"></image>
   </view>
   <web-view
-          src="https://sh.eyescare.cn/h5/#/reserve-time?reserveType=teacher&doctorId=705f1b16-0250-44a3-aa01-2aac2b363199">
+          src="https://sh.eyescare.cn/h5/#/reserve-time?reserveType=patient&doctorId=fa8283f6-34fc-4178-96fe-4f7f0a357ccc">
   </web-view>
 </view>
