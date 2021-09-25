@@ -1,6 +1,6 @@
 // const server = "http://www.tfhealth.net/sh/";
 // const server =  "https://www.scinomedicine.com/student_health";
-const server = "https://sh.eyescare.cn/";
+const server = "https://sh.eyescare.cn/sh/";
 const server1 = "https://ec.eyescare.cn/"
 
 // const server =  "https://student.scinomedicine.com/student_health/";
