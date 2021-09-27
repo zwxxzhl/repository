@@ -2,6 +2,7 @@
   "pages": [
     "pages/high-myopia/high-myopia",
     "pages/examine-view/examine-view",
+    "pages/popular-science/popular-science",
     "pages/index/index",
     "pages/high-web-ex/high-web-ex",
     "pages/report-query/report-query",
@@ -33,6 +34,12 @@
         "text": "报告查看",
         "iconPath": "images/index1.png",
         "selectedIconPath": "images/index1.png"
+      },
+      {
+        "pagePath": "pages/popular-science/popular-science",
+        "text": "科普资源库",
+        "iconPath": "images/index4.png",
+        "selectedIconPath": "images/index4.png"
       }
     ]
   },

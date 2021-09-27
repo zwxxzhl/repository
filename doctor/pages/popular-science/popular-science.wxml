@@ -1,0 +1,5 @@
+<view>
+  <web-view
+          src="https://sh.eyescare.cn/sh/upload/knowledge.html">
+  </web-view>
+</view>
