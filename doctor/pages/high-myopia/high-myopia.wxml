@@ -2,12 +2,19 @@
   <view class="mem_name">
     <image src="/images/logo.png"></image>
   </view>
-  <van-grid column-num="1">
+  <van-grid column-num="2">
     <van-grid-item
             icon="notes-o"
             link-type="navigateTo"
             url="/pages/high-web-ex/high-web-ex"
-            text="高度近视" />
+            text="高度近视(珠江新城院区)" />
+    <van-grid-item
+            icon="notes-o"
+            link-type="navigateTo"
+            url="/pages/high-web-ex-o/high-web-ex-o"
+            text="高度近视(区庄院区)" />
+  </van-grid>
+  <van-grid column-num="1">
     <van-grid-item
             icon="tv-o"
             link-type="navigateTo"

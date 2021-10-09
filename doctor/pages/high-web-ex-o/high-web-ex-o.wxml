@@ -1,0 +1,8 @@
+<view>
+  <view class="mem_name">
+    <image src="/images/logo.png"></image>
+  </view>
+  <web-view
+          src="https://sh.eyescare.cn/h5/#/reserve-time?reserveType=student&doctorId=762d8405-51d7-4220-98aa-e8bbf72d5b05">
+  </web-view>
+</view>
