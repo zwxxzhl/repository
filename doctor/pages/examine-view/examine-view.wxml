@@ -10,7 +10,11 @@
             url="/pages/index/index"
             text="眼健康体检报告" />
     <van-grid-item icon="notes-o" text="高近检测报告" />
-    <van-grid-item icon="description" text="广州供电局体检报告" />
+    <van-grid-item
+            icon="description"
+            link-type="navigateTo"
+            url="/pages/high-web-we-v/high-web-we-v"
+            text="广州供电局体检报告" />
   </van-grid>
 
 </view>
