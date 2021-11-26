@@ -1,6 +1,6 @@
 .mem_name {
     height: 298rpx;
-    background: #01C4A2;
+    background: #EE6E00;
     font-size: 40rpx;
     color: #fff;
     font-weight: bold;
@@ -12,7 +12,16 @@
 }
 
 .mem_name image {
-    width: 86rpx;
-    height: 97rpx;
+    width: 212rpx;
+    height: 212rpx;
     margin-bottom: 20rpx;
+}
+
+.index-grid-icon {
+    width: 170rpx;
+    height: 170rpx;
+}
+
+.index-grid text {
+    font-size: 32rpx;
 }

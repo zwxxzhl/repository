@@ -1,20 +1,18 @@
 <view>
 
-  <view class="mem_name">
-    <image src="/images/logo.png"></image>
+  <view class="view-grid backcolor-blue-1" data-idx="1" bind:tap="onNavigateTo">
+    <image src="/images/icon-xuanjiao@3x-bai.png" class="view-grid-icon"/>
+    <text class="view-grid-text">学生体检报告</text>
   </view>
-  <van-grid column-num="1">
-    <van-grid-item
-            icon="eye-o"
-            link-type="navigateTo"
-            url="/pages/index/index"
-            text="眼健康体检报告" />
-    <van-grid-item icon="notes-o" text="高近检测报告" />
-    <van-grid-item
-            icon="description"
-            link-type="navigateTo"
-            url="/pages/high-web-we-v/high-web-we-v"
-            text="广州供电局体检报告" />
-  </van-grid>
+
+  <view class="view-grid backcolor-yellow" data-idx="2" bind:tap="onNavigateTo">
+    <image src="/images/icon-jinshi@3x-bai.png" class="view-grid-icon"/>
+    <text class="view-grid-text">高近检测报告</text>
+  </view>
+
+  <view class="view-grid backcolor-blue-2" data-idx="3" bind:tap="onNavigateTo">
+    <image src="/images/icon@3x-bai.png" class="view-grid-icon"/>
+    <text class="view-grid-text">眼部体检报告</text>
+  </view>
 
 </view>

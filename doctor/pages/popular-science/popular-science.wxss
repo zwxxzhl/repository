@@ -1,18 +1,12 @@
-.mem_name {
-    height: 298rpx;
-    background: #01C4A2;
-    font-size: 40rpx;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.cell-icon {
+    width: 70rpx;
+    height: 70rpx;
 }
 
-.mem_name image {
-    width: 86rpx;
-    height: 97rpx;
-    margin-bottom: 20rpx;
+.cell-title {
+    width: 450rpx;
+}
+
+.cell-text {
+    color: #EE6E00;
 }

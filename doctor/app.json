@@ -22,28 +22,28 @@
     "pages/create-qrcode/create-qrcode"
   ],
   "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "color": "#000000",
+    "selectedColor": "#EE6E00",
     "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#FFFFFF",
     "list": [
       {
         "pagePath": "pages/high-myopia/high-myopia",
         "text": "在线预约",
-        "iconPath": "images/r_icon7.png",
-        "selectedIconPath": "images/r_icon7.png"
+        "iconPath": "images/icon-yuyue@3x-hei.png",
+        "selectedIconPath": "images/icon-yuyue@3x.png"
       },
       {
         "pagePath": "pages/examine-view/examine-view",
         "text": "报告查看",
-        "iconPath": "images/index1.png",
-        "selectedIconPath": "images/index1.png"
+        "iconPath": "images/icon-baogao@3x.png",
+        "selectedIconPath": "images/icon-baogao@3x-se.png"
       },
       {
         "pagePath": "pages/popular-science/popular-science",
-        "text": "科普资源库",
-        "iconPath": "images/index4.png",
-        "selectedIconPath": "images/index4.png"
+        "text": "科普宣教",
+        "iconPath": "images/icon-ziyuanku@3x.png",
+        "selectedIconPath": "images/icon-ziyuanku@3x-se.png"
       }
     ]
   },

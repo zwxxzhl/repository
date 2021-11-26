@@ -1,6 +1,6 @@
 {
-  "navigationBarTitleText": "广州供电局报告查看",
-  "navigationBarBackgroundColor": "#01C4A2",
+  "navigationBarTitleText": "眼部体检报告查看",
+  "navigationBarBackgroundColor": "#EE6E00",
   "navigationBarTextStyle": "white",
   "usingComponents": {
     "van-grid": "@vant/weapp/grid/index",

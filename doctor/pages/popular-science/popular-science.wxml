@@ -1,13 +1,54 @@
 <view>
-  <view class="mem_name">
-    <image src="/images/logo.png"></image>
-  </view>
-  <van-cell-group>
-    <van-cell title="常见校园眼病的防治" is-link value="下载" bind:click="onClick" data-id="1" />
-    <van-cell title="广州市儿童青少年近视防控体系建设实践与体会" is-link value="下载" bind:click="onClick" data-id="2" />
-    <van-cell title="预防近视小知识" is-link value="下载" bind:click="onClick" data-id="3" />
 
-    <van-cell title="沐浴阳光,预防近视" is-link value="下载" bind:click="onDownloadMp4" />
+  <van-cell-group>
+    <van-cell is-link bind:click="onClick" data-id="1">
+      <view slot="icon">
+        <image src="/images/icon-pdf@3x.png" class="cell-icon"/>
+      </view>
+      <view slot="title">
+        <view class="cell-title">常见校园眼病的防治</view>
+      </view>
+      <view>
+        <text class="cell-text">下载</text>
+      </view>
+    </van-cell>
+
+    <van-cell is-link bind:click="onClick" data-id="2">
+      <view slot="icon">
+        <image src="/images/icon-pdf@3x.png" class="cell-icon"/>
+      </view>
+      <view slot="title">
+        <view class="cell-title">广州市儿童青少年近视防控体系建设实践与体会</view>
+      </view>
+      <view>
+        <text class="cell-text">下载</text>
+      </view>
+    </van-cell>
+
+    <van-cell is-link bind:click="onClick" data-id="3">
+      <view slot="icon">
+        <image src="/images/icon-pdf@3x.png" class="cell-icon"/>
+      </view>
+      <view slot="title">
+        <view class="cell-title">预防近视小知识</view>
+      </view>
+      <view>
+        <text class="cell-text">下载</text>
+      </view>
+    </van-cell>
+
+    <van-cell is-link bind:click="onDownloadMp4">
+      <view slot="icon">
+        <image src="/images/icon-pdf@3x.png" class="cell-icon"/>
+      </view>
+      <view slot="title">
+        <view class="cell-title">沐浴阳光,预防近视</view>
+      </view>
+      <view>
+        <text class="cell-text">下载</text>
+      </view>
+    </van-cell>
+
   </van-cell-group>
 
   <van-toast id="van-toast" />

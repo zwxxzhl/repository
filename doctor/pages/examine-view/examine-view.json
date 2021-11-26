@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "报告查看",
-  "navigationBarBackgroundColor": "#01C4A2",
+  "navigationBarBackgroundColor": "#EE6E00",
   "navigationBarTextStyle": "white",
   "usingComponents": {
     "van-grid": "@vant/weapp/grid/index",
