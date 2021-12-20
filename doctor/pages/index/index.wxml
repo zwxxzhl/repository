@@ -5,11 +5,11 @@
   </view>
   <view class="oper_menu">
 
-    <view class="oper_item" bindtap="toAppointment">
+    <!--<view class="oper_item" bindtap="toAppointment">
       <image src="/images/index5.png"></image>
       <view>我的预约</view>
       <image src="/images/right.png"></image>
-    </view>
+    </view>-->
 
     <view class="oper_item" bindtap="toReport">
       <image src="/images/index1.png"></image>
@@ -17,11 +17,11 @@
       <image src="/images/right.png"></image>
     </view>
 
-    <view class="oper_item" bindtap="toQgReport">
+    <!--<view class="oper_item" bindtap="toQgReport">
       <image src="/images/index6.png"></image>
       <view>屈光档案</view>
       <image src="/images/right.png"></image>
-    </view>
+    </view>-->
 
     <view class="oper_item" bindtap="toMemberInfo">
       <image src="/images/index2.png"></image>

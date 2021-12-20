@@ -328,10 +328,15 @@
           <view>左眼</view>
         </view>
         <view>
+          <!-- 2021-12-20 修改：写死->未检异常 -->
           <view class="c_text1">
-            {{examineData.items['005004031'].displayString?examineData.items['005004031'].displayString:'/'}}</view>
+            未检异常
+            <!--{{examineData.items['005004031'].displayString?examineData.items['005004031'].displayString:'/'}}-->
+          </view>
           <view class="c_text1">
-            {{examineData.items['005004032'].displayString?examineData.items['005004032'].displayString:'/'}}</view>
+            未检异常
+            <!--{{examineData.items['005004032'].displayString?examineData.items['005004032'].displayString:'/'}}-->
+          </view>
         </view>
       </view>
 
