@@ -1,0 +1,33 @@
+<view class="main" wx:if="{{loading}}">
+
+  <view class="oper_item" wx:for="{{reportList}}" wx:key="unique" bindtap="toReportDetail"
+    data-exid="{{item.examineDataId}}">
+    <view>
+      <image src="/images/e.png"></image>
+    </view>
+
+    <view>
+
+      <view>
+        <view class="detail_item">{{item.schoolName}}</view>
+        <view class="detail_item">{{item.gradeCode}}({{item.classCode}}班)</view>
+        <view class="detail_item">
+          <view>检查时间：</view>
+          <view>{{item.examineTime}}</view>
+        </view>
+      </view>
+
+      <view>
+        <label>{{item.studentName}}</label>
+        <label>{{item.gender==0?'男':'女'}}</label>
+      </view>
+
+    </view>
+  </view>
+
+  <view wx:if="{{reportList.length==0||!reportList}}" class="no_data">
+    暂无相关体检报告
+  </view>
+
+
+</view>

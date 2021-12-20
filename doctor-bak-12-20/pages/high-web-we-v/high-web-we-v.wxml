@@ -1,0 +1,5 @@
+<view>
+  <web-view
+          src="https://report.highmyopia.zonxt.com">
+  </web-view>
+</view>

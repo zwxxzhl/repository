@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/high-myopia/high-myopia",
+    "pages/examine-view/examine-view",
+    "pages/popular-science/popular-science",
+    "pages/index/index",
+    "pages/high-web-ex/high-web-ex",
+    "pages/high-web-ex-o/high-web-ex-o",
+    "pages/high-web-ex-v/high-web-ex-v",
+    "pages/high-web-pe/high-web-pe",
+    "pages/high-web-we/high-web-we",
+    "pages/high-web-we-v/high-web-we-v",
+    "pages/report-query/report-query",
+    "pages/report-list/report-list",
+    "pages/qg-list/qg-list",
+    "pages/qg-info/qg-info",
+    "pages/app-time/app-time",
+    "pages/member-appointment/member-appointment",
+    "pages/app-doctor/app-doctor",
+    "pages/member-info/member-info",
+    "pages/member-bind/member-bind",
+    "pages/add-bind/add-bind",
+    "pages/create-qrcode/create-qrcode"
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#EE6E00",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/high-myopia/high-myopia",
+        "text": "在线预约",
+        "iconPath": "images/icon-yuyue@3x-hei.png",
+        "selectedIconPath": "images/icon-yuyue@3x.png"
+      },
+      {
+        "pagePath": "pages/examine-view/examine-view",
+        "text": "报告查看",
+        "iconPath": "images/icon-baogao@3x.png",
+        "selectedIconPath": "images/icon-baogao@3x-se.png"
+      },
+      {
+        "pagePath": "pages/popular-science/popular-science",
+        "text": "科普宣教",
+        "iconPath": "images/icon-ziyuanku@3x.png",
+        "selectedIconPath": "images/icon-ziyuanku@3x-se.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000000,
+    "connectSocket": 10000000,
+    "uploadFile": 10000000,
+    "downloadFile": 10000000
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

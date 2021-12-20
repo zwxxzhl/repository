@@ -1,0 +1,30 @@
+<view class="main" wx:if="{{loading}}">
+  <view class="doc-name">{{docName}}</view>
+
+  <view class="time-view">
+
+    <view data-index="{{index}}" bindtap="swiperTime" class="time-item {{timeIndex==index?'curr':''}}"
+      wx:for="{{timeList}}" wx:key="unique">
+      <view class="time-dd">
+        <view class="{{item.check?'curr-text':''}}">{{item.showStr}}</view>
+        <view class="{{item.check?'curr-text':''}}">{{item.weeks}}</view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="app-view">
+
+    <view class="app-item" wx:for="{{scheduleInfo}}" wx:key="unique">
+      <view class="app-time-text">{{item.sTime}}~{{item.eTime}}</view>
+      <view class="app-left">剩余号源：<label
+          class="{{item.unreservedNumber==0?'over-text':''}}">{{item.unreservedNumber}}</label></view>
+      <view class="over-app" wx:if="{{item.unreservedNumber==0}}">已约满</view>
+      <view data-item="{{item}}" bindtap="toApp" class="in-app" wx:if="{{item.unreservedNumber>0}}">预约</view>
+    </view>
+
+    <view class="no_data" wx:if="{{scheduleInfo.length==0}}">暂无可预约时间</view>
+
+  </view>
+
+</view>

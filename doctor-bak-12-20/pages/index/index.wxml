@@ -1,0 +1,52 @@
+<view class="main" wx:if="{{loading}}">
+  <view class="mem_name">
+    <image src="/images/logo.png"></image>
+    {{userInfo.userName}}
+  </view>
+  <view class="oper_menu">
+
+    <view class="oper_item" bindtap="toAppointment">
+      <image src="/images/index5.png"></image>
+      <view>我的预约</view>
+      <image src="/images/right.png"></image>
+    </view>
+
+    <view class="oper_item" bindtap="toReport">
+      <image src="/images/index1.png"></image>
+      <view>体检报告</view>
+      <image src="/images/right.png"></image>
+    </view>
+
+    <view class="oper_item" bindtap="toQgReport">
+      <image src="/images/index6.png"></image>
+      <view>屈光档案</view>
+      <image src="/images/right.png"></image>
+    </view>
+
+    <view class="oper_item" bindtap="toMemberInfo">
+      <image src="/images/index2.png"></image>
+      <view>个人资料</view>
+      <image src="/images/right.png"></image>
+    </view>
+
+    <view class="oper_item" bindtap="toBind">
+      <image src="/images/index3.png"></image>
+      <view>身份绑定</view>
+      <image src="/images/right.png"></image>
+    </view>
+
+    <!-- <view class="oper_item" bindtap="toQrcode">
+      <image src="/images/index4.png"></image>
+      <view>二维码生成</view>
+      <image src="/images/right.png"></image>
+    </view> -->
+
+  </view>
+
+  <view class="tips_text">
+    <view>操作步骤：</view>
+    <view>第一步:进入“身份绑定”,根据学生姓名和身份证号进行身份绑定;</view>
+    <view>第二步:进入“体检报告”,查看绑定学生的学校体检报告;</view>
+  </view>
+
+</view>

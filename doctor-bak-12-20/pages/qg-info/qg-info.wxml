@@ -1,0 +1,216 @@
+<view class="main" wx:if="{{loading}}">
+
+  <view class="adult_info">
+
+    <view class="child_mem_info">
+      <view class="c_detail_info">
+        <view class="c_name">{{examineData.patientName}}</view>
+        <view class="c_no">{{examineData.idNumber}}</view>
+      </view>
+
+      <view class="info_mem">
+        <view>
+          <view class="c_detail_info1">
+            <view class="c_detail">
+              <view>性別：</view>
+              <view class="c_text">{{examineData.gender==0?'男':'女'}}</view>
+            </view>
+            <view class="c_detail">
+              <view>年龄：</view>
+              <view class="c_text">{{examineData.age}}</view>
+            </view>
+          </view>
+
+        </view>
+
+        <view class="canvas_view" wx:if="{{qrcodePop}}">
+          <canvas class="canvas-code" canvas-id="myQrcode" style="width:{{qrcode_w}}px;height:{{qrcode_w}}px;" />
+        </view>
+
+      </view>
+
+
+    </view>
+
+
+    <view class="title_item">
+      <view>验光检查</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="eye_info">
+        <view></view>
+        <view>球镜(Sph)</view>
+        <view>柱镜(Cyl)</view>
+        <view>轴位(Axial)</view>
+      </view>
+
+      <view class="eye_info">
+        <view>右眼(OD)</view>
+        <view class="c_text1">{{itemss['0201'].displayString?itemss['0201'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['0203'].displayString?itemss['0203'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['0205'].displayString?itemss['0205'].displayString:'/'}}</view>
+      </view>
+      <view class="eye_info">
+        <view>左眼(OS)</view>
+        <view class="c_text1">{{itemss['0202'].displayString?itemss['0202'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['0204'].displayString?itemss['0204'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['0206'].displayString?itemss['0206'].displayString:'/'}}</view>
+      </view>
+
+
+    </view>
+
+
+    <view class="c_info1 in-b-b">
+      <view class="info_item eye_item ">
+        <view>裸眼视力(VA)</view>
+        <view></view>
+      </view>
+
+      <view class="eye-ii">
+        <view class="no_e_info">
+          <view>右眼(OD)</view>
+          <view>{{itemss['0101'].displayString?itemss['0101'].displayString:'/'}}</view>
+        </view>
+        <view class="no_e_info">
+          <view>左眼(OS)</view>
+          <view>{{itemss['0102'].displayString?itemss['0102'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class="c_info1 in-b-b">
+      <view class="info_item eye_item ">
+        <view>最佳矫正视力(BCVA)</view>
+        <view></view>
+      </view>
+
+      <view class="eye-ii">
+        <view class="no_e_info">
+          <view>右眼(OD)</view>
+          <view>{{itemss['0207'].displayString?itemss['0207'].displayString:'/'}}</view>
+        </view>
+        <view class="no_e_info">
+          <view>左眼(OS)</view>
+          <view>{{itemss['0208'].displayString?itemss['0208'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+    </view>
+
+
+    <view class="title_item">
+      <view>眼压检查</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="no_eye_view">
+        <view class="no_eye_info">
+          <view>右眼眼压(mmHg)</view>
+          <view>左眼眼压(mmHg)</view>
+        </view>
+
+        <view class="no_eye_info">
+          <view class="c_text1">{{itemss['002001001'].displayString?itemss['002001001'].displayString:'/'}}</view>
+          <view class="c_text1">{{itemss['002001002'].displayString?itemss['002001002'].displayString:'/'}}</view>
+        </view>
+      </view>
+
+    </view>
+
+
+    <view class="title_item">
+      <view>眼生物测量</view>
+    </view>
+
+    <view class="c_info1">
+
+      <view class="eye_info">
+        <view></view>
+        <view>右眼</view>
+        <view>左眼</view>
+      </view>
+
+      <view class="eye_info">
+        <view>眼轴(AL)</view>
+        <view class="c_text1">{{itemss['004001001'].displayString?itemss['004001001'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['004001002'].displayString?itemss['004001002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info">
+        <view>中央角膜厚度(CCT)</view>
+        <view class="c_text1">{{itemss['004002001'].displayString?itemss['004002001'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['004002002'].displayString?itemss['004002002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info">
+        <view>前房深度(ACD)</view>
+        <view class="c_text1">{{itemss['004003001'].displayString?itemss['004003001'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['004003002'].displayString?itemss['004003002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info">
+        <view>晶状体厚度(LT)</view>
+        <view class="c_text1">{{itemss['004004001'].displayString?itemss['004004001'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['004004002'].displayString?itemss['004004002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info">
+        <view>玻璃体腔长度(VL)</view>
+        <view class="c_text1">{{itemss['004005001'].displayString?itemss['004005001'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['004005002'].displayString?itemss['004005002'].displayString:'/'}}</view>
+      </view>
+
+      <view class="eye_info">
+        <view>角膜曲率(KRT)</view>
+        <view class="c_text1">{{itemss['004006001'].displayString?itemss['004006001'].displayString:'/'}}</view>
+        <view class="c_text1">{{itemss['004006002'].displayString?itemss['004006002'].displayString:'/'}}</view>
+      </view>
+
+    </view>
+
+
+  </view>
+
+  <!-- <view class="tips_text">
+  <text>温馨提示：体检后发现</text>
+  <label>中度视力不良</label>
+  <text>和</text>
+  <label>重度视力不良</label>
+  <text>以及存在</text>
+  <label>眼病</label>
+  <text>的儿童、青少年进一步转诊到县级医院进行近视规范建档的检查项目包括：</text>
+  <label>普通视力检查、眼压检查、验光检查、眼部A超</label>
+  <text>，近视规范建档的检查项目</text>
+  <label>按我县医保门诊统筹报账</label>
+  <text>，其他疾病的检查与治疗费用按现有医保政策执行，请家长</text>
+  <label>携带孩子医保卡</label>
+  <text>前往指定医院</text>
+  <label>近视防控门诊</label>
+  <text>检查。谢谢配合！</text>
+</view> -->
+
+  <!-- <view class="tips_text top_b" wx:if="{{examineData.comprehensiveEvaluation}}">
+    <view class="jcjl_tip">检查结论：</view>
+    <view>{{examineData.comprehensiveEvaluation}}</view>
+  </view>
+
+  <view class="tips_text" wx:if="{{examineData.recommendedCorrectionProject}}">
+    <view class="cljy_tip">处理建议：</view>
+    <view>{{examineData.recommendedCorrectionProject}}</view>
+  </view>
+
+  <view class="tips_text end_text"
+    wx-if="{{examineData.exceptionItemName=='中度视力低下'||examineData.exceptionItemName=='重度视力低下'}}">
+    根据孩子的视力体检结果，需要到指定医院开展免费近视规范建档，请您携带孩子医保卡按指定时间到近视建档定点医院进行免费规范建档检查！
+  </view>
+
+  <view wx-if="{{examineData.exceptionItemName=='中度视力低下'||examineData.exceptionItemName=='重度视力低下'}}" class="app-btn"
+    bindtap="toChooseDoctor">预约挂号</view> -->
+
+
+</view>

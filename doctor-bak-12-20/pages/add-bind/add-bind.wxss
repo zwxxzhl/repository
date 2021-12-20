@@ -1,0 +1,88 @@
+.oper_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 2rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eeeeee;
+  padding: 0 32rpx;
+  background: #FFFFFF;
+}
+
+.oper_item>view:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+
+.oper_item>view:nth-child(1) text {
+  color: #FF0000;
+  line-height: 100rpx;
+  width: 30rpx;
+  display: block;
+}
+
+.oper_item image:nth-child(3) {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.oper_item>view:nth-child(2) {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* .oper_item>view:nth-child(2)>view {
+  height: 100;
+} */
+
+.oper_item>view:nth-child(2) input {
+  padding: 0 20rpx;
+  width: 400rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.oper_item picker {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.oper_item picker view {
+  padding: 0 20rpx;
+  width: 300rpx;
+}
+
+.p_class {
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.25);
+  letter-spacing: 4rpx;
+}
+
+.save_btn {
+  width: 430rpx;
+  height: 72rpx;
+  background: #EE6E00;
+  border-radius: 72rpx;
+  text-align: center;
+  line-height: 72rpx;
+  margin: 72rpx auto 0;
+  font-size: 24rpx;
+  font-family: Avenir Next LT Pro;
+  font-weight: 400;
+  line-height: 72rpx;
+  color: #FFFFFF;
+  letter-spacing: 10rpx;
+}

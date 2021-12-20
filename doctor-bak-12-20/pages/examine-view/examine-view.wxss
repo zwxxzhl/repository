@@ -1,0 +1,32 @@
+.backcolor-blue-1 {
+    background-color: #21BDBB;
+}
+
+.backcolor-yellow {
+    background-color: #EE8F00;
+}
+
+.backcolor-blue-2 {
+    background-color: #00CBFF;
+}
+
+.view-grid {
+    display: flex;
+    margin: 15rpx 20rpx;
+    border-radius: 20rpx;
+    font-size: 40rpx;
+    color: #FFFFFF;
+    line-height: 170rpx;
+}
+
+.view-grid-icon {
+    padding-left: 30rpx;
+    width: 170rpx;
+    height: 170rpx;
+}
+
+.view-grid-text {
+    padding-left: 20rpx;
+}
+
+

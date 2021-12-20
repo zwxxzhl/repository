@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "科普宣教",
+  "navigationBarBackgroundColor": "#EE6E00",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-notify": "@vant/weapp/notify/index"
+  }
+}

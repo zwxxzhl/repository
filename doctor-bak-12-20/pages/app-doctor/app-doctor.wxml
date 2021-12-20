@@ -1,0 +1,8 @@
+<view class="main" wx:if="{{loading}}">
+
+  <view data-item="{{item}}" wx:for="{{doctor}}" wx:key="unique" class="doctor-item" bindtap="toChooseAppTime">
+    <view>{{item.doctorName}}{{item.depName?' | '+item.depName:''}}</view>
+    <image src="/images/right.png"></image>
+  </view>
+
+</view>
