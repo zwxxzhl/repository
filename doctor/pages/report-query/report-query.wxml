@@ -295,7 +295,7 @@
       <view class="img-view">
         <view>
           <image bindtap="preImg" data-img="{{examineData.items['005004001'].displayString}}" mode="aspectFill"
-            src="{{'https://mbsb.scinomedicine.com/student_health/'+examineData.items['005004001'].displayString}}">
+            src="{{httpServer + examineData.items['005004001'].displayString}}">
           </image>
         </view>
         <!-- <view></view> -->
@@ -311,7 +311,7 @@
       <view class="img-view">
         <view>
           <image bindtap="preImg" data-img="{{examineData.items['005004103'].displayString}}" mode="aspectFill"
-            src="{{'https://mbsb.scinomedicine.com/student_health/'+examineData.items['005004103'].displayString}}">
+            src="{{httpServer + examineData.items['005004103'].displayString}}">
           </image>
         </view>
         <!-- <view></view> -->

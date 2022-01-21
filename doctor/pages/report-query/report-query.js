@@ -5,6 +5,7 @@ import QRCode from '../../utils/weapp.qrcode.min.js';
 Page({
 
   data: {
+    httpServer: base.server,
     loading: false,
     studentInfo: null, //体检记录和明细
     examineData: null, //学生信息
