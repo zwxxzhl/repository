@@ -22,6 +22,11 @@
     height: 170rpx;
 }
 
+.index-grid-icon-150 {
+    width: 150rpx;
+    height: 150rpx;
+}
+
 .index-grid text {
     font-size: 32rpx;
 }

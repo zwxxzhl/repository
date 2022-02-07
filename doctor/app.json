@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/high-myopia/high-myopia",
+    "pages/high-select/high-select",
     "pages/examine-view/examine-view",
+    "pages/about-app/about-app",
+    "pages/about-page/about-page",
     "pages/popular-science/popular-science",
     "pages/index/index",
     "pages/high-web-ex/high-web-ex",
@@ -9,6 +12,7 @@
     "pages/high-web-ex-v/high-web-ex-v",
     "pages/high-web-pe/high-web-pe",
     "pages/high-web-we/high-web-we",
+    "pages/high-web-we-select/high-web-we-select",
     "pages/high-web-we-v/high-web-we-v",
     "pages/report-query/report-query",
     "pages/report-list/report-list",
