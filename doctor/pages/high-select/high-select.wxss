@@ -1,0 +1,23 @@
+.view-text-title {
+    margin: 0 30rpx;
+    text-indent: 70rpx;
+    font-size: 32rpx;
+}
+
+.view-text {
+    margin: 5rpx 30rpx;
+    font-size: 32rpx;
+}
+
+.index-grid-icon {
+    width: 170rpx;
+    height: 170rpx;
+}
+
+.index-grid text {
+    font-size: 32rpx;
+}
+
+
+
+

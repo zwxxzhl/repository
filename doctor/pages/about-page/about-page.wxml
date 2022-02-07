@@ -1,0 +1,5 @@
+<view>
+  <web-view
+          src="http://www.gzzoc.com/">
+  </web-view>
+</view>

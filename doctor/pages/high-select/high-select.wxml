@@ -1,0 +1,28 @@
+<view>
+  <view class="view-text-title">高度近视检查面向全广州市中小学生免费开放，需为广州市中小学在读学生，且满足以下两个条件其中之一：</view>
+
+  <view class="view-text">1）6-8岁，任一眼近视度数超过三百度（含三百度）。</view>
+  <view class="view-text">2）8-18岁，任一眼近视度数超过六百度（含六百度）。</view>
+  <view class="view-text">需持散瞳验光结果或医院眼科诊断证明。</view>
+
+  <view class="view-text" style="padding-top: 20rpx">检查包括眼部裂隙灯常规检查，医学验光，眼球生物学测量及眼底检查等，如资料核实，检查费用全免。</view>
+  <view class="view-text">检查地点为中山大学中山眼科中心，分为区庄院区及珠江新城院区。</view>
+  <view class="view-text">常规开放时间为寒暑假每日，开学期间周六日。</view>
+
+  <view class="view-text" style="padding-top: 40rpx">预约地点： </view>
+
+  <van-grid class="index-grid" column-num="2" border="{{ true }}">
+
+    <van-grid-item use-slot link-type="navigateTo" url="/pages/high-web-ex-o/high-web-ex-o">
+      <image src="/images/icon-jinshi@3x.png" class="index-grid-icon"/>
+      <text>区庄院区</text>
+    </van-grid-item>
+
+    <van-grid-item use-slot link-type="navigateTo" url="/pages/high-web-ex/high-web-ex">
+      <image src="/images/icon-jinshi@3x.png" class="index-grid-icon"/>
+      <text>珠江新城院区</text>
+    </van-grid-item>
+
+  </van-grid>
+
+</view>

@@ -1,0 +1,8 @@
+<view>
+
+  <view class="view-text-title">本程序涉及到所有项目均由中山大学中山眼科中心组织、安排。如有疑问，请联系18922101948</view>
+
+<!--  bind:tap="onNavigateTo"-->
+  <view class="text-path">中山眼科中心介绍：http://www.gzzoc.com</view>
+
+</view>
