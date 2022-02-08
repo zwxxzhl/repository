@@ -4,7 +4,7 @@
 
   <view class="view-grid backcolor-blue-2" data-idx="1" bind:tap="onTuanTiDialog">
     <image src="/images/icon@3x-bai.png" class="view-grid-icon"/>
-    <text class="view-grid-text">供电局项目</text>
+    <text class="view-grid-text">供电局员工体检</text>
   </view>
 
 </view>

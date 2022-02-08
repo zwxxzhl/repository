@@ -7,14 +7,14 @@
     <text class="view-grid-text">入校检查报告</text>
   </view>
 
-  <!--<view class="view-grid backcolor-yellow" data-idx="2" bind:tap="onNavigateTo">
-    <image src="/images/icon-jinshi@3x-bai.png" class="view-grid-icon"/>
-    <text class="view-grid-text">高近检测报告</text>
-  </view>-->
-
   <view class="view-grid backcolor-blue-2" data-idx="3" bind:tap="onNavigateTo">
     <image src="/images/icon@3x-bai.png" class="view-grid-icon"/>
     <text class="view-grid-text">眼部体检报告</text>
+  </view>
+
+  <view class="view-grid backcolor-yellow" data-idx="2" bind:tap="onNavigateTo">
+    <image src="/images/icon-jinshi@3x-bai.png" class="view-grid-icon"/>
+    <text class="view-grid-text">高近检测报告</text>
   </view>
 
 </view>
