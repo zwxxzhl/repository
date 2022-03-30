@@ -1,0 +1,22 @@
+<view>
+  <view class="mem_name">
+    <image src="/images/top-logo@3x.png"></image>
+  </view>
+
+  <van-grid class="index-grid" column-num="2" border="{{ true }}">
+    <van-grid-item use-slot link-type="navigateTo" url="/pages/high-web-pe/high-web-pe">
+      <image src="/images/icon-xuanjiao@3x.png" class="index-grid-icon"/>
+      <text>宣教预约</text>
+    </van-grid-item>
+
+    <van-grid-item use-slot link-type="navigateTo" url="/pages/about-app/about-app">
+      <image src="/images/icon-zhishi-se@3x.png" class="index-grid-icon"/>
+      <text>科普知识</text>
+    </van-grid-item>
+  </van-grid>
+
+  <view class="view-text-title">
+    中山大学中山眼科中心提供近视防控健康教育宣讲服务，有需要的区教育局或试点学校可点击“宣教预约”，提交宣讲需求并预约时间。需求通过后，中山大学中山眼科中心将安排宣讲专家前往学校进行宣讲。
+  </view>
+
+</view>

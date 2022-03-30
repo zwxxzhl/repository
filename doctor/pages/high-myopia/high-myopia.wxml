@@ -3,11 +3,32 @@
   <van-dialog id="xuan-jiao-dialog" confirm-button-color="#EE6E00"/>
 
   <view class="mem_name">
-    <image src="/images/top-logo@3x.png"></image>
+    <image src="/images/banner@2x.png"></image>
+  </view>
+  <view class="quick-entry">
+    <view class="quick-entry-icon"></view>
+    <view class="quick-entry-text">
+      快速入口
+    </view>
   </view>
 
-  <van-grid class="index-grid" column-num="2" border="{{ true }}">
+  <view class="grad-grid orange-light-grad" data-idx="1" bind:tap="onNavigateTo">
+    <text class="grad-grid-text orange-text">视力健康检测结果查询</text>
+    <image class="grad-grid-icon" src="/images/menu1@2x.png"/>
+  </view>
 
+  <view class="grad-grid blue-light-grad" data-idx="2" bind:tap="onNavigateTo">
+    <text class="grad-grid-text blue-text">高度近视学生检测</text>
+    <image class="grad-grid-icon" src="/images/menu2@2x.png"/>
+  </view>
+
+  <view class="grad-grid cyan-light-grad" data-idx="3" bind:tap="onNavigateTo">
+    <text class="grad-grid-text cyan-text">健康教育</text>
+    <image class="grad-grid-icon" src="/images/menu3@2x.png"/>
+  </view>
+
+  <!-- 原首页代码 -->
+  <!--<van-grid class="index-grid" column-num="2" border="{{ true }}">
     <van-grid-item use-slot link-type="navigateTo" url="/pages/high-select/high-select">
       <image src="/images/icon-jinshi@3x.png" class="index-grid-icon"/>
       <text>高度近视</text>
@@ -17,11 +38,9 @@
       <image src="/images/icon-xuanjiao@3x.png" class="index-grid-icon"/>
       <text>宣教预约</text>
     </van-grid-item>
-
   </van-grid>
 
   <van-grid class="index-grid" column-num="2" border="{{ true }}">
-
     <van-grid-item use-slot link-type="navigateTo" url="/pages/high-web-we-select/high-web-we-select">
       <image src="/images/icon@3x.png" class="index-grid-icon"/>
       <text>团体体检预约</text>
@@ -31,6 +50,5 @@
       <image src="/images/index4.png" class="index-grid-icon"/>
       <text>有关资料</text>
     </van-grid-item>
-
-  </van-grid>
+  </van-grid>-->
 </view>

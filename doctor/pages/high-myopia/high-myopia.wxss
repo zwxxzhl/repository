@@ -12,9 +12,79 @@
 }
 
 .mem_name image {
-    width: 212rpx;
-    height: 212rpx;
-    margin-bottom: 20rpx;
+    width: 100%;
+    height: 298rpx;
+}
+
+.quick-entry {
+    display: flex;
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    background-color: #ffffff;
+}
+
+.quick-entry-icon {
+    margin-top: 25rpx;
+    width: 10rpx;
+    height: 50rpx;
+    background-color: #EE6E00;
+    margin-left: 30rpx;
+}
+
+.quick-entry-text {
+    font-family: 黑体;
+    margin-left: 20rpx;
+}
+
+.grad-grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 25rpx 20rpx;
+    border-radius: 20rpx;
+    font-size: 40rpx;
+    color: #FFFFFF;
+    line-height: 170rpx;
+}
+
+.grad-grid-text {
+    font-family: 黑体;
+    font-size: 42rpx;
+    font-weight: bold;
+    padding-left: 30rpx;
+}
+
+.grad-grid-icon {
+    margin-right: 30rpx;
+    width: 213rpx;
+    height: 181rpx;
+}
+
+.orange-text {
+    color: #EE6E00;
+}
+
+.blue-text {
+    color: #123F93;
+}
+
+.cyan-text {
+    color: #029671;
+}
+
+.orange-light-grad {
+    background-color: #FFD9A0;
+    background-image: linear-gradient(to right, #FFD9A0, #FAEDD8);
+}
+
+.blue-light-grad {
+    background-color: #B3CDFD;
+    background-image: linear-gradient(to right, #B3CDFD, #EDF3FD);
+}
+
+.cyan-light-grad {
+    background-color: #9CE8DA;
+    background-image: linear-gradient(to right, #9CE8DA, #DFF5F1);
 }
 
 .index-grid-icon {

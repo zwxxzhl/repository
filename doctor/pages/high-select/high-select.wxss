@@ -1,5 +1,5 @@
 .view-text-title {
-    margin: 0 30rpx;
+    margin: 20rpx 30rpx 0 30rpx;
     text-indent: 70rpx;
     font-size: 32rpx;
 }
@@ -9,6 +9,15 @@
     font-size: 32rpx;
 }
 
+.index-grid-content {
+    width: 100%;
+    margin: 0 120rpx 0 70rpx;
+    display: flex;
+    justify-content: space-between;
+    line-height: 170rpx;
+    vertical-align: center;
+}
+
 .index-grid-icon {
     width: 170rpx;
     height: 170rpx;
@@ -16,6 +25,30 @@
 
 .index-grid text {
     font-size: 32rpx;
+}
+
+
+
+.backcolor-yellow {
+    background-color: #ffffff;
+}
+
+.view-grid {
+    display: flex;
+    margin: 15rpx 20rpx;
+    border-radius: 20rpx;
+    font-size: 40rpx;
+    line-height: 170rpx;
+}
+
+.view-grid-icon {
+    padding-left: 30rpx;
+    width: 170rpx;
+    height: 170rpx;
+}
+
+.view-grid-text {
+    padding-left: 20rpx;
 }
 
 

@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/high-myopia/high-myopia",
+    "pages/education/education",
     "pages/high-select/high-select",
     "pages/examine-view/examine-view",
     "pages/about-app/about-app",
@@ -34,15 +35,9 @@
     "list": [
       {
         "pagePath": "pages/high-myopia/high-myopia",
-        "text": "在线预约",
+        "text": "首页",
         "iconPath": "images/icon-yuyue@3x-hei.png",
         "selectedIconPath": "images/icon-yuyue@3x.png"
-      },
-      {
-        "pagePath": "pages/examine-view/examine-view",
-        "text": "报告查看",
-        "iconPath": "images/icon-baogao@3x.png",
-        "selectedIconPath": "images/icon-baogao@3x-se.png"
       },
       {
         "pagePath": "pages/popular-science/popular-science",

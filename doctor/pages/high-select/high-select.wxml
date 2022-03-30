@@ -12,17 +12,29 @@
   <view class="view-text" style="padding-top: 40rpx">预约地点： </view>
 
   <van-grid class="index-grid" column-num="2" border="{{ true }}">
-
     <van-grid-item use-slot link-type="navigateTo" url="/pages/high-web-ex-o/high-web-ex-o">
       <image src="/images/icon-jinshi@3x.png" class="index-grid-icon"/>
-      <text>区庄院区</text>
+      <text>区庄院区预约</text>
     </van-grid-item>
 
     <van-grid-item use-slot link-type="navigateTo" url="/pages/high-web-ex/high-web-ex">
       <image src="/images/icon-jinshi@3x.png" class="index-grid-icon"/>
-      <text>珠江新城院区</text>
+      <text>珠江新城院区预约</text>
     </van-grid-item>
-
   </van-grid>
+
+  <van-grid class="index-grid" column-num="1" direction="horizontal" border="{{ true }}">
+    <van-grid-item use-slot link-type="navigateTo" url="/pages/high-web-ex-v/high-web-ex-v">
+      <view class="index-grid-content">
+        <image src="/images/icon-chaxun-se@3x.png" class="index-grid-icon"/>
+        <text>报告查看</text>
+      </view>
+    </van-grid-item>
+  </van-grid>
+
+  <!--<view class="view-grid backcolor-yellow" data-idx="1" bind:tap="onNavigateTo">
+    <image src="/images/icon-chaxun-se@3x.png" class="view-grid-icon"/>
+    <text class="view-grid-text">报告查看</text>
+  </view>-->
 
 </view>
