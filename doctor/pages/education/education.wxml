@@ -9,7 +9,7 @@
       <text>宣教预约</text>
     </van-grid-item>
 
-    <van-grid-item use-slot link-type="navigateTo" url="/pages/about-app/about-app">
+    <van-grid-item use-slot link-type="navigateTo" url="/pages/popular-science/popular-science">
       <image src="/images/icon-zhishi-se@3x.png" class="index-grid-icon"/>
       <text>科普知识</text>
     </van-grid-item>

@@ -11,7 +11,7 @@
 
 .index-grid-content {
     width: 100%;
-    margin: 0 120rpx 0 70rpx;
+    margin: 0 240rpx 0 180rpx;
     display: flex;
     justify-content: space-between;
     line-height: 170rpx;

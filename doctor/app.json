@@ -27,26 +27,6 @@
     "pages/add-bind/add-bind",
     "pages/create-qrcode/create-qrcode"
   ],
-  "tabBar": {
-    "color": "#000000",
-    "selectedColor": "#EE6E00",
-    "borderStyle": "black",
-    "backgroundColor": "#FFFFFF",
-    "list": [
-      {
-        "pagePath": "pages/high-myopia/high-myopia",
-        "text": "首页",
-        "iconPath": "images/icon-yuyue@3x-hei.png",
-        "selectedIconPath": "images/icon-yuyue@3x.png"
-      },
-      {
-        "pagePath": "pages/popular-science/popular-science",
-        "text": "科普宣教",
-        "iconPath": "images/icon-ziyuanku@3x.png",
-        "selectedIconPath": "images/icon-ziyuanku@3x-se.png"
-      }
-    ]
-  },
   "networkTimeout": {
     "request": 10000000,
     "connectSocket": 10000000,
