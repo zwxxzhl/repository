@@ -24,13 +24,13 @@ Page({
     } else if (3 === val) {
       url = "https://sh.eyescare.cn/sh/upload/knowledge/003.pdf";
     } else if (4 === val) {
-      url = "https://sh.eyescare.cn/sh/upload/knowledge/003.pdf";
+      url = "https://sh.eyescare.cn/sh/upload/knowledge/004.pdf";
     } else if (5 === val) {
-      url = "https://sh.eyescare.cn/sh/upload/knowledge/003.pdf";
+      url = "https://sh.eyescare.cn/sh/upload/knowledge/005.pdf";
     } else if (6 === val) {
-      url = "https://sh.eyescare.cn/sh/upload/knowledge/003.pdf";
+      url = "https://sh.eyescare.cn/sh/upload/knowledge/006.pdf";
     } else if (7 === val) {
-      url = "https://sh.eyescare.cn/sh/upload/knowledge/003.pdf";
+      url = "https://sh.eyescare.cn/sh/upload/knowledge/007.pdf";
     } else {
       return;
     }
