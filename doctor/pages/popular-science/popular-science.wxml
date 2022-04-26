@@ -49,6 +49,54 @@
       </view>
     </van-cell>
 
+    <van-cell is-link bind:click="onClick" data-id="4">
+      <view slot="icon">
+        <image src="/images/icon-pdf@3x.png" class="cell-icon"/>
+      </view>
+      <view slot="title">
+        <view class="cell-title">教育部教育行政部门宣讲团宣讲课件</view>
+      </view>
+      <view>
+        <text class="cell-text">下载</text>
+      </view>
+    </van-cell>
+
+    <van-cell is-link bind:click="onClick" data-id="5">
+      <view slot="icon">
+        <image src="/images/icon-pdf@3x.png" class="cell-icon"/>
+      </view>
+      <view slot="title">
+        <view class="cell-title">教育部校（园）长宣讲团宣讲课件</view>
+      </view>
+      <view>
+        <text class="cell-text">下载</text>
+      </view>
+    </van-cell>
+
+    <van-cell is-link bind:click="onClick" data-id="6">
+      <view slot="icon">
+        <image src="/images/icon-pdf@3x.png" class="cell-icon"/>
+      </view>
+      <view slot="title">
+        <view class="cell-title">教育部专家宣讲团宣讲课件</view>
+      </view>
+      <view>
+        <text class="cell-text">下载</text>
+      </view>
+    </van-cell>
+
+    <van-cell is-link bind:click="onClick" data-id="7">
+      <view slot="icon">
+        <image src="/images/icon-pdf@3x.png" class="cell-icon"/>
+      </view>
+      <view slot="title">
+        <view class="cell-title">教育部家长宣讲团宣讲课件</view>
+      </view>
+      <view>
+        <text class="cell-text">下载</text>
+      </view>
+    </van-cell>
+
   </van-cell-group>
 
   <van-toast id="van-toast" />
