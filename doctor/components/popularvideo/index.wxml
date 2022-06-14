@@ -1,0 +1,19 @@
+<view>
+
+  <van-cell-group>
+    <van-cell>
+      <view slot="title">
+        <view class="cell-title">沐浴阳光,预防近视</view>
+      </view>
+    </van-cell>
+  </van-cell-group>
+
+  <video
+    id="myVideo"
+    src="https://sh.eyescare.cn/sh/upload/knowledge/004.mp4"
+    show-center-play-btn='{{false}}'
+    show-play-btn="{{true}}"
+    controls>
+  </video>
+
+</view>

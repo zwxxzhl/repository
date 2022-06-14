@@ -1,11 +1,8 @@
 {
-  "navigationBarTitleText": "科普宣教",
+  "navigationBarTitleText": "转载",
   "navigationBarBackgroundColor": "#EE6E00",
   "navigationBarTextStyle": "white",
   "usingComponents": {
-    "ppt-com": "/components/pptcom/index",
-    "trans-ship": "/components/transshipment/index",
-    "popular-video": "/components/popularvideo/index",
     "van-cell": "@vant/weapp/cell/index",
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-toast": "@vant/weapp/toast/index",
@@ -13,5 +10,6 @@
     "van-notify": "@vant/weapp/notify/index",
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index"
-  }
+  },
+  "component": true
 }
