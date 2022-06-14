@@ -1,4 +1,4 @@
-<view>
+<view class="video-layout">
 
   <van-cell-group>
     <van-cell>
@@ -7,10 +7,84 @@
       </view>
     </van-cell>
   </van-cell-group>
-
   <video
     id="myVideo"
     src="https://sh.eyescare.cn/sh/upload/knowledge/004.mp4"
+    show-center-play-btn='{{false}}'
+    show-play-btn="{{true}}"
+    controls>
+  </video>
+
+  <van-cell-group>
+    <van-cell>
+      <view slot="title">
+        <view class="cell-title">幼儿园老师完整版</view>
+      </view>
+    </van-cell>
+  </van-cell-group>
+  <video
+    id="myVideo"
+    src="https://sh.eyescare.cn/sh/upload/knowledge/kindergarten.mp4"
+    show-center-play-btn='{{false}}'
+    show-play-btn="{{true}}"
+    controls>
+  </video>
+
+  <van-cell-group>
+    <van-cell>
+      <view slot="title">
+        <view class="cell-title">小学老师完整版</view>
+      </view>
+    </van-cell>
+  </van-cell-group>
+  <video
+    id="myVideo"
+    src="https://sh.eyescare.cn/sh/upload/knowledge/school.mp4"
+    show-center-play-btn='{{false}}'
+    show-play-btn="{{true}}"
+    controls>
+  </video>
+
+  <van-cell-group>
+    <van-cell>
+      <view slot="title">
+        <view class="cell-title">申教授完整版</view>
+      </view>
+    </van-cell>
+  </van-cell-group>
+  <video
+    id="myVideo"
+    src="https://sh.eyescare.cn/sh/upload/knowledge/professors.mp4"
+    show-center-play-btn='{{false}}'
+    show-play-btn="{{true}}"
+    controls>
+  </video>
+
+  <van-cell-group>
+    <van-cell>
+      <view slot="title">
+        <view class="cell-title">杨晓教授完整版</view>
+      </view>
+    </van-cell>
+  </van-cell-group>
+  <video
+    id="myVideo"
+    src="https://sh.eyescare.cn/sh/upload/knowledge/professoryx.mp4"
+    show-center-play-btn='{{false}}'
+    show-play-btn="{{true}}"
+    controls>
+  </video>
+
+  <van-cell-group>
+    <van-cell>
+      <view slot="title">
+        <view class="cell-title">杨静教授完整版</view>
+      </view>
+    </van-cell>
+  </van-cell-group>
+  <video
+    id="myVideo"
+    src="https://sh.eyescare.cn/sh/upload/knowledge/professoryj.mp4"
     show-center-play-btn='{{false}}'
     show-play-btn="{{true}}"
     controls>

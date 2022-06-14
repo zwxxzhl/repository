@@ -1,0 +1,5 @@
+<view>
+
+  <web-view wx:if="{{ src !== '' }}" src="{{ src }}"></web-view>
+
+</view>

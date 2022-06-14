@@ -2,3 +2,7 @@
     width: 100%;
 }
 
+.video-layout {
+    text-align: center;
+}
+

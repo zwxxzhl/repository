@@ -1,0 +1,5 @@
+<view>
+
+  <webview src="{{ srcUrl }}"></webview>
+
+</view>

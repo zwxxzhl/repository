@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/high-myopia/high-myopia",
+    "pages/web-view-page/index",
     "pages/education/education",
     "pages/high-select/high-select",
     "pages/examine-view/examine-view",

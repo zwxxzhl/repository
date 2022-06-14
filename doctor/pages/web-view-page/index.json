@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "详情",
+  "navigationBarBackgroundColor": "#EE6E00",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "webview": "/components/webview/index"
+  }
+}
