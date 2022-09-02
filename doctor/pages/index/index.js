@@ -23,7 +23,9 @@ Page({
     }
     let that = this;
     let data = {
-      openid: openId
+      openid: openId,
+      timestamp: wx.getStorageSync('timestamp'),
+      token: wx.getStorageSync('token')
     }
     base.getData(base.server + app.getInfo, data, that.data.loading).then(res => {
       that.setData({
